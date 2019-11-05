@@ -43,8 +43,11 @@ function checkPassword()
             if(matchedHexa > 300){
                 alert("Wachtwoord geweigerd! Komt " + matchedHexa + " keer voor, wat MEER is dan de norm van 300. Kies een nieuw wachtwoord.");
             }
-            else {
-                alert("Wachtwoord geaccepteerd! Komt " + matchedHexa + " keer voor, wat MINDER is dan de norm van 300.");
+            else { 
+                if (matchedHexa == undefined){
+                    matchedHexa = 0;
+                }
+                alert("Wachtwoord geaccepteerd! Komt " + matchedHexa + " keer voor in Have I Been Pwned , wat MINDER is dan de norm van 300.");
             }
         }
     }
