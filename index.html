@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
-<body>
-        <h1>yooooooooo</h1> 
-<p>TEST 2</p>
-</body>
+    <header>
+        <title>Mehdi Bouchema - Security</title>
+    </header>
+    <body>
+        <h1>Have I Been Pwned?</h1>
+        <p>Voeg hieronder uw wachtwoord toe en er zal gechecked worden of dit wachtwoord te vaak gebruikt wordt.</p>
+        <form>
+                <input type="password" placeholder="Test je wachtwoord uit" id="givenPass" required></input>
+                <button type="button" onclick="checkPassword()">CHECK</button>
+        </form>
+        <!-- javascript en SHA1 libraries inhalen -->
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.js" integrity="sha256-/KLVVgrLjedg68lGef8hAFZyKvgZOHHnUXamGpd6ww8=" crossorigin="anonymous"></script>
+    </body>
 </html>
